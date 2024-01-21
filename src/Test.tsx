@@ -25,7 +25,7 @@ const Test = () => {
             gasPrice: parseUnits("10", "gwei"), // Example gas price
         };
 
-        const signedTx = await signer?.sendTransaction(tx)
+        const signedTx = await signer?.signTransaction(tx)
         console.log(signedTx);
     };
 
